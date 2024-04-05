@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     default: "Lunity",
     template: "%s | Lunity",
   },
-  description: "",
+  description: "Lunity, your webpartner for a bright future",
   robots: {
     index: true,
     follow: true,
