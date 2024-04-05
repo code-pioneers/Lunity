@@ -4,8 +4,9 @@ import { Poppins } from "next/font/google";
 import { Analytics } from "@/components/analytics";
 
 const poppins = Poppins({
+  display: 'swap',
+  subsets: ['latin'],
   weight: ['300', '700'],
-  subsets: ['latin']
 });
 
 export const metadata: Metadata = {

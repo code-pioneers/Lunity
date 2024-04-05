@@ -23,6 +23,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Log environment variable
+        run: echo "BEAM TOKEN - $NEXT_PUBLIC_BEAM_TOKEN"
+
       - name: Checkout 🛎️
         uses: actions/checkout@v4
 
