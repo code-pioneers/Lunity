@@ -7,6 +7,7 @@ const poppins = Poppins({
   display: 'swap',
   subsets: ['latin'],
   weight: ['300', '700'],
+  variable: '--font-poppins',
 });
 
 export const metadata: Metadata = {
@@ -37,11 +38,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="nl" className={poppins.className}>
+    <html lang="nl" className={poppins.variable}>
       <head>
         <Analytics />
       </head>
-      <body className="bg-slate-200">
+      <body className="bg-slate-200 font-poppins">
         {children}
       </body>
     </html>
