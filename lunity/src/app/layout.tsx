@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     default: "Lunity",
     template: "%s | Lunity",
   },
-  description: "",
+  description: "Lunity, your webpartner for a bright future",
   robots: {
     index: true,
     follow: true,
@@ -40,7 +40,7 @@ export default function RootLayout({
       <head>
         <Analytics />
       </head>
-      <body className="bg-black">
+      <body className="bg-slate-200">
         {children}
       </body>
     </html>
