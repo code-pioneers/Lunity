@@ -40,7 +40,7 @@ export default function RootLayout({
       <head>
         <Analytics />
       </head>
-      <body className="bg-gradient-to-l from-slate-100 via-slate-100/20 to-slade-100">
+      <body className="bg-slate-200">
         {children}
       </body>
     </html>
