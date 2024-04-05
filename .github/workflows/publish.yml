@@ -5,6 +5,10 @@ on:
     branches:
       - main
 
+env:
+  # Setting an environment variable with the value of a configuration variable
+  NEXT_PUBLIC_BEAM_TOKEN: ${{ vars.NEXT_PUBLIC_BEAM_TOKEN }}
+
 permissions:
   contents: read
   pages: write
