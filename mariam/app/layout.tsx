@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Mulish } from "next/font/google";
+import { Poppins } from "next/font/google";
 //styles
 import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -13,7 +13,10 @@ import ActiveContextSectionProvider from "@/context/ActiveContextSection";
 import { Toaster } from "react-hot-toast";
 import Loading from "./loading";
 import { themeDefault } from "@/data/Header";
-const mulish = Mulish({ subsets: ["latin"] });
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: '400',
+});
 
 export const metadata: Metadata = {
   title: "Lunity",
@@ -24,7 +27,7 @@ export default function RootLayout({children,}: { children: React.ReactNode;}) {
 
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={mulish.className}  >
+      <body className={poppins.className}  >
         <ThemeProvider attribute="class" defaultTheme={themeDefault.mode}>
             <Loading/>
             <ButtonToggle />

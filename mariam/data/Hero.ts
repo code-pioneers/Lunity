@@ -5,55 +5,54 @@ export const bannerData={
     imageBg:"/assets/images/bg/bg.png",
     subtitle:"👋 Hi There,",
     title:"We Are ",
-    words:["Lunity","Webdevelopers","in de war"],
+    words:["Lunity","Innovative","Reliable"],
     desc:"<strong>Illuminating the Future of Web Development</strong> - At Lunity, we pride ourselves on delivering cutting-edge web solutions that transform your digital presence.",
     button:{
-      text:'More About Me',
+      text:'More About Us',
       href:'#about',
-      icon:React.createElement(BsPersonCircle)
+      // icon:React.createElement(BsPersonCircle)
     }
 }
 
 export const InfoData=[
     {
       label:"Email:",
-      value:"contact@mariam.com"
+      value:"info@lunity.be"
     },
     {
       label:"Phone:",
-      value:"+113-804-9098"
+      value:"+32 485 92 51 30"
     },
     {
       label:"Location:",
-      value:"California ,USA"
+      value:"Belgium"
     },
 ]
 
 import { BsFacebook ,BsTwitterX,BsInstagram,BsDribbble,BsGithub} from "react-icons/bs";
 export const SocialIcons=[
-  {
-    href:"#",
-    icon:React.createElement(BsFacebook)
-  },
-  {
-    href:"#",
-    icon:React.createElement(BsTwitterX)
-  },
-  {
-    href:"#",
-    icon:React.createElement(BsInstagram)
-  }
-  ,
-  {
-    href:"#",
-    icon:React.createElement(BsDribbble)
-  }
-  ,
-  {
-    href:"#",
-    icon:React.createElement(BsGithub)
-  }
-
+  // {
+  //   href:"#",
+  //   icon:React.createElement(BsFacebook)
+  // },
+  // {
+  //   href:"#",
+  //   icon:React.createElement(BsTwitterX)
+  // },
+  // {
+  //   href:"#",
+  //   icon:React.createElement(BsInstagram)
+  // }
+  // ,
+  // {
+  //   href:"#",
+  //   icon:React.createElement(BsDribbble)
+  // }
+  // ,
+  // {
+  //   href:"#",
+  //   icon:React.createElement(BsGithub)
+  // }
 ]
  
  

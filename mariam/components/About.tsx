@@ -15,7 +15,7 @@ const About = () => {
     <section className="about section section--white" id="about" ref={ref} >
       <div className="container">
         <Heading {...heading} />
-        <Profile {...profile} />
+        {/* <Profile {...profile} /> */}
         <motion.div 
           variants={fadeInAnimationVariants}
           initial="initial"
@@ -28,7 +28,7 @@ const About = () => {
             })}
         </motion.div>
 
-        <motion.div 
+        {/* <motion.div 
           variants={fadeInAnimationVariants}
           initial="initial"
           whileInView="animate"
@@ -54,7 +54,7 @@ const About = () => {
               </div>
             );
           })}
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );

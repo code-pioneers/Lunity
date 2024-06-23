@@ -2,8 +2,8 @@ import React from "react";
 import { BsDownload } from "react-icons/bs";
 
 export const heading={
-  title:"About Me",
-  subtitle:"Main Informations About Me And What I Love To Do."
+  title:"About Us",
+  subtitle:"Main Information About Us And What We Love To Do."
 }
 
 
@@ -28,10 +28,10 @@ export const profile = {
 };
 
 export const features= [
-  { count: "+70", text: "Completed Projects" },
-  { count: "+50", text: "Happy Customers" },
-  { count: "+07", text: "Years of experience" },
-  { count: "+15", text: "Awards won" },
+  { count: "+8", text: "Completed Projects" },
+  { count: "+6", text: "Happy Customers" },
+  { count: "+10", text: "Years of experience" },
+  { count: "+4", text: "Certifications" },
 ];
 
 

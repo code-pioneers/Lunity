@@ -1,3 +1,3 @@
 export const footer={
-  textCopyright:"© 2024 Mariam Wallas , Are Right All Resereved."
+  textCopyright:"© 2024 Lunity. All rights reserved."
 }

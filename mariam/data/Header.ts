@@ -2,7 +2,7 @@
 export const logo={
   image:"/assets/images/logo.png",
   width:45,
-  height:50,
+  height:45,
 
 
 }
