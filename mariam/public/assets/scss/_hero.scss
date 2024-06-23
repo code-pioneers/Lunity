@@ -1,0 +1,86 @@
+/* ------------------------------
+		 Hero
+------------------------------ */
+.hero{
+	background-size: cover;
+	background-position: center center;
+	padding-left:30px;
+	padding-right: 30px;
+	position: relative;
+	z-index: 1;
+	&__img{
+		object-fit: cover;
+		object-position: bottom left;
+	}
+  &__content{
+		display: flex;
+		justify-content:space-between;
+		flex-direction: column;
+		position: relative;
+		padding: 30px 0px;
+	}
+  &__banner{
+		position: relative;
+   
+	}
+	&__social-media{
+    .social-media__link{
+			color: $text-color-dark  !important;
+		}
+	}
+}
+
+.banner{
+	&__subtitle{
+		font-weight: 400;
+		letter-spacing: 1px;
+		color:$white-color  !important;
+	}
+	&__title{
+		font-weight: 900;
+		color:$white-color !important;
+		display: flex;
+		gap: 5px;
+	
+	}
+	&__desc{
+		max-width: 450px;
+		margin-top: 20px;
+		margin-bottom: 30px;
+		color:$white-color !important;
+	}
+	.btn-default{
+		background-color: $white-color !important;
+		color:$accent-color !important
+	}
+	}
+
+.info{
+	width:100%;
+	display: flex;
+	&__item{
+		padding-right: 30px;
+	}
+	&__label{
+		color:$white-color !important;
+		font-weight: 900;
+		font-family: $heading-font;
+	}
+	&__value{
+		font-size: 15px;
+		color:$white-color !important;
+		font-weight: 400;
+	}
+}
+
+    
+
+
+	
+
+
+	
+
+
+ 
+     
