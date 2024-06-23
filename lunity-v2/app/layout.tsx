@@ -13,6 +13,7 @@ import ActiveContextSectionProvider from "@/context/ActiveContextSection";
 import { Toaster } from "react-hot-toast";
 import Loading from "./loading";
 import { themeDefault } from "@/data/Header";
+import { Analytics } from "@/components/elements/analytics";
 const poppins = Poppins({
   subsets: ["latin"],
   weight: '400',
@@ -27,6 +28,9 @@ export default function RootLayout({children,}: { children: React.ReactNode;}) {
 
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <Analytics />
+      </head>
       <body className={poppins.className}  >
         <ThemeProvider attribute="class" defaultTheme={themeDefault.mode}>
             <Loading/>
