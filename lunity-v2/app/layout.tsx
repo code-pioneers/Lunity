@@ -13,7 +13,7 @@ import ActiveContextSectionProvider from "@/context/ActiveContextSection";
 import { Toaster } from "react-hot-toast";
 import Loading from "./loading";
 import { themeDefault } from "@/data/Header";
-import { Analytics } from "@/components/elements/analytics";
+import { Analytics } from "@/components/elements/Analytics";
 const poppins = Poppins({
   subsets: ["latin"],
   weight: '400',
