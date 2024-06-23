@@ -23,6 +23,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Log environment variable
+        run: echo "BEAM TOKEN - $NEXT_PUBLIC_BEAM_TOKEN"
+
       - name: Checkout 🛎️
         uses: actions/checkout@v4
 
@@ -35,6 +38,8 @@ jobs:
           static_site_generator: next
 
       - name: Build with Next.js 🏗️
+        env:
+          NEXT_PUBLIC_BEAM_TOKEN: ${{ vars.NEXT_PUBLIC_BEAM_TOKEN }}
         run: cd lunity && npx next build
 
       - name: Upload artifact 📡

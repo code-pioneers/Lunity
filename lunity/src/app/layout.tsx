@@ -4,8 +4,10 @@ import { Poppins } from "next/font/google";
 import { Analytics } from "@/components/analytics";
 
 const poppins = Poppins({
+  display: 'swap',
+  subsets: ['latin'],
   weight: ['300', '700'],
-  subsets: ['latin']
+  variable: '--font-poppins',
 });
 
 export const metadata: Metadata = {
@@ -13,7 +15,7 @@ export const metadata: Metadata = {
     default: "Lunity",
     template: "%s | Lunity",
   },
-  description: "",
+  description: "Lunity, your webpartner for a bright future",
   robots: {
     index: true,
     follow: true,
@@ -36,11 +38,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="nl" className={poppins.className}>
+    <html lang="nl" className={poppins.variable}>
       <head>
         <Analytics />
       </head>
-      <body className="bg-black">
+      <body className="bg-slate-200 font-poppins">
         {children}
       </body>
     </html>
