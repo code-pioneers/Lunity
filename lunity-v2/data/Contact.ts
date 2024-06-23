@@ -3,27 +3,26 @@ import { BsPhoneFill,BsEnvelopeFill,BsGeoAltFill } from "react-icons/bs";
 import { BsSendFill } from "react-icons/bs";
 
 export const heading={
-  title:"Contact Me",
-  subtitle:"Feel Free To Contact Me Any Time"
+  title:"Contact Us",
+  subtitle:"Feel Free To Contact Us Any Time"
 }
 
 export const contactInfo={
   title:"Let's talk about everything!",
-  desc:"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+  desc:"Have questions or ready to start your project? Get in touch with us today!",
   list:[
     {
-      value:"+(684) 555-0102",
+      value:"+32 485 92 51 30",
       icon:React.createElement(BsPhoneFill)
     },
     {
-      value:"mariamdemo@gmail.com",
+      value:"info@lunity.be",
       icon:React.createElement(BsEnvelopeFill)
     },
     {
-      value:"241 Royal Mesa, New Jersey",
+      value:"Emile Verhaerenstraat 42, 2890 Sint-Amands",
       icon:React.createElement(BsGeoAltFill)
     },
-
   ]
 }
 export const btnSubmitData={

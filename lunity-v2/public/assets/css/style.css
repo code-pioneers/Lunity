@@ -48,7 +48,7 @@ html {
 }
 
 body {
-  font-family: "Muli", sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #fff;
   color: #454545;
   font-size: 16px;
@@ -57,14 +57,14 @@ body {
 }
 
 p {
-  font-family: "Muli", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #454545;
   font-size: 16px;
   font-weight: 400;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Muli", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 900;
   line-height: 1.4;
   color: #152035;
@@ -338,7 +338,7 @@ img {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: #343a40;
+  background-color: #ffb400;
   z-index: -1;
   transform-origin: center;
   transform: scale(0);
@@ -351,6 +351,9 @@ img {
 .btn-default:hover, .btn-default:focus {
   color: #ffffff !important;
   outline: none;
+}
+.banner .btn-default:hover, .banner .btn-default:focus {
+  color: #ffffff !important;
 }
 
 .btn__submit-spin {
@@ -443,7 +446,7 @@ img {
   font-weight: 700;
   font-size: 16px;
   color: #454545;
-  font-family: "Muli", sans-serif !important;
+  font-family: "Poppins", sans-serif !important;
 }
 .nav__link:after {
   position: absolute;
@@ -595,7 +598,7 @@ img {
 .info__label {
   color: #ffffff !important;
   font-weight: 900;
-  font-family: "Muli", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .info__value {
   font-size: 15px;
@@ -648,14 +651,14 @@ img {
   line-height: 1.2;
   color: #ffb400 !important;
   font-weight: 900;
-  font-family: "Muli", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .feature__text {
   color: #152035;
   margin-bottom: 4px;
   text-transform: capitalize;
   font-weight: 700;
-  font-family: "Muli", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
 }
 

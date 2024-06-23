@@ -4,7 +4,7 @@ import { Resend } from "resend";
 import ContactFormEmail from '@/email/contact-form-email'
 import {validateString,getErrorMessage} from '@/components/lib/utils'
 
-const resend=new Resend("re_b9Koff8K_PtqMoNtW7DLrDvcqMvMZvfgU")
+const resend=new Resend("re_TfUHSRpE_8JNHEFQZMrcaE9cGcSnV65fQ")
 export const senderEmail=async(formaData:FormData)=>{
   const senderName=formaData.get("senderName")
   const senderEmail=formaData.get("senderEmail")
@@ -38,8 +38,8 @@ export const senderEmail=async(formaData:FormData)=>{
   let data;
   try {
     data = await resend.emails.send({
-      from: "My Portfolio Contact <mariam@assiagroupe.tech>",
-      to: "mariamdemo@gmail.com" as string,
+      from: "Lunity Contact <info@lunity.be>",
+      to: "info@lunity.be" as string,
       subject: subject as string,
       reply_to:senderEmail as string,
       react: React.createElement(ContactFormEmail, {

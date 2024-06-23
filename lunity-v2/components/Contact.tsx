@@ -38,7 +38,7 @@ const Contact = () => {
                   })
                 }
                 <div className="contact__info-item ">
-                <span className='contact__info-item-icon'><BsShareFill /></span>
+                {/* <span className='contact__info-item-icon'><BsShareFill /></span> */}
                   <div className="contact__info-item-social-media">
                     <SocialMedia/>
                   </div>

@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react'
 type PropsButton={
   text:string,
   href:string,
-  icon:ReactNode
+  icon?:ReactNode
   type?:string,
   download?:boolean
   
