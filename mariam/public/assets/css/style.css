@@ -338,7 +338,7 @@ img {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: #343a40;
+  background-color: #ffb400;
   z-index: -1;
   transform-origin: center;
   transform: scale(0);
@@ -351,6 +351,9 @@ img {
 .btn-default:hover, .btn-default:focus {
   color: #ffffff !important;
   outline: none;
+}
+.banner .btn-default:hover, .banner .btn-default:focus {
+  color: #ffffff !important;
 }
 
 .btn__submit-spin {
