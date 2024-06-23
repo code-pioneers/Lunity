@@ -40,12 +40,12 @@ jobs:
       - name: Build with Next.js 🏗️
         env:
           NEXT_PUBLIC_BEAM_TOKEN: ${{ vars.NEXT_PUBLIC_BEAM_TOKEN }}
-        run: cd lunity && npx next build
+        run: cd lunity-v2 && npx next build
 
       - name: Upload artifact 📡
         uses: actions/upload-pages-artifact@v3
         with:
-          path: lunity/out
+          path: lunity-v2/out
 
   deploy:
     environment:
