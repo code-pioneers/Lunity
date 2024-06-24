@@ -2,21 +2,30 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import SocialMedia from "./elements/SocialMedia";
-import { InfoData, bannerData } from "@/data/Hero";
 import Button from "./elements/Button";
 import Typewriter from "typewriter-effect";
 import { useTheme } from "next-themes";
 import { useSectionInView } from "./lib/hooks/UseSectionInView";
 import { motion } from "framer-motion";
-import {fadeIn}from './lib/utils'
+import {fadeIn}from './lib/utils';
+
+import {
+  useTranslation, 
+  LanguageSwitcher, 
+  LinkWithLocale
+} from "next-export-i18n";
+
 const Hero = () => {
   const { theme, setTheme } = useTheme();
   const { ref } = useSectionInView("Home");
+  const { t } = useTranslation();
+
+  const infoData = t('hero.infoData');
 
   return (
     <section className="hero vh-100" ref={ref}>
       <Image
-        src={bannerData?.imageBg}
+        src="/assets/images/bg/bg.png"
         alt=""
         fill
         priority
@@ -32,28 +41,30 @@ const Hero = () => {
             <div className="hero__content vh-100 ">
               <div className="hero__social-media">
                 <SocialMedia />
+                <LanguageSwitcher lang="nl">Nederlands</LanguageSwitcher>
+                <LanguageSwitcher lang="en">English</LanguageSwitcher>
               </div>
 
               <div className="hero__banner">
                 <div className="banner">
                   <h1 className="banner__title ">
-                    {bannerData?.title}
+                    {t('hero.title')}
                     <Typewriter
                       options={{
-                        strings: bannerData?.words,
+                        strings: t('hero.words'),
                         autoStart: true,
                         loop: true,
                         delay: 75,
                       }}
                     />
                   </h1>
-                  <p className="banner__desc" dangerouslySetInnerHTML={{__html: bannerData?.desc}}></p>
-                  <Button {...bannerData?.button} />
+                  <p className="banner__desc" dangerouslySetInnerHTML={{__html: t('hero.description')}}></p>
+                  <Button text={t('hero.button.text')} href={t('hero.button.href')} />
                 </div>
               </div>
               <div className="hero__info">
                 <div className="info">
-                  {InfoData?.map((info, index) => {
+                  {typeof infoData === "object" && infoData?.map((info: any, index: number) => {
                     return (
                       <div className="info__item" key={index}>
                         <p className="info__label mb-0">{info?.label}</p>

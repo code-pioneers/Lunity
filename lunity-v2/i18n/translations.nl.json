@@ -1,0 +1,80 @@
+{
+    "about": {
+        "features": [
+            { "count": "+8", "text": "Voltooide Projecten" },
+            { "count": "+6", "text": "Tevreden Klanten" },
+            { "count": "+10", "text": "Jaren Ervaring" },
+            { "count": "+4", "text": "Certificeringen" }
+        ],
+        "title": "Over Ons",
+        "subtitle": "Informatie Over Ons En Wat Wij Leuk Vinden Om Te Doen."
+    },
+    "contact": {
+        "info": {
+            "description": "Vragen of klaar om uw project te starten? Neem vandaag nog contact met ons op!",
+            "items": [
+                {
+                    "value": "+32 485 92 51 30",
+                    "icon": "phone"
+                },
+                {
+                    "value": "info@lunity.be",
+                    "icon": "envelope"
+                },
+                {
+                    "value": "Emile Verhaerenstraat 42, 2890 Sint-Amands",
+                    "icon": "geo"
+                }
+            ],
+            "title": "Laten we het overal over hebben!"
+        },
+        "title": "Contacteer Ons",
+        "submitButton": "Bericht Versturen",
+        "subtitle": "Neem Vrijblijvend Contact Met Ons Op"
+    },
+    "footer": "© 2024 Lunity. Alle rechten voorbehouden.",
+    "hero": {
+        "button": {
+            "href": "#about",
+            "text": "Meer Over Ons"
+        },
+        "description": "<strong>De Toekomst Van Webontwikkeling Verlichten</strong> - Bij Lunity zijn we trots op het leveren van baanbrekende weboplossingen die uw digitale aanwezigheid transformeren.",
+        "infoData": [
+            {
+                "label": "E-mail:",
+                "value": "info@lunity.be"
+            },
+            {
+                "label": "Telefoon:",
+                "value": "+32 485 92 51 30"
+            },
+            {
+                "label": "Locatie:",
+                "value": "België"
+            }
+        ],
+        "title": "Wij Zijn ",
+        "words": ["Lunity","Innovatief","Betrouwbaar"]
+    },
+    "services": {
+        "items": [
+            {
+                "img":"/assets/images/services/1.webp",
+                "title":"Webontwikkeling",
+                "desc":"Transformeer uw ideeën in realiteit met onze deskundige webontwikkelingsdiensten. Wij zijn gespecialiseerd in het creëren van responsieve, gebruiksvriendelijke websites die aansluiten bij uw bedrijfsdoelen en uw publiek boeien."
+            },
+            {
+                "img":"/assets/images/services/2.webp",
+                "title":"SEO Marketing",
+                "desc":"Verbeter uw online zichtbaarheid en trek meer organisch verkeer aan met onze SEO optimalisatiediensten. Wij gebruiken bewezen strategieën om uw zoekmachinerangschikking te verbeteren, websiteverkeer te verhogen en conversies te stimuleren."
+            },
+            {
+                "img":"/assets/images/services/3.webp",
+                "title":"Branding",
+                "desc":"Bouw een onderscheidende merkidentiteit die resoneert met uw doelgroep. Van logo-ontwerp tot merkstrategie, wij helpen bedrijven een sterke en memorabele aanwezigheid te creëren op digitale platforms, waardoor vertrouwen en loyaliteit worden bevorderd."
+            }
+        ],
+        "title": "Onze Diensten",
+        "subtitle": "Wij Hebben Met Een Aantal Klanten Samengewerkt..."
+    }
+}

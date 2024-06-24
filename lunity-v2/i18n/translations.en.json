@@ -1,0 +1,80 @@
+{
+    "about": {
+        "features": [
+            { "count": "+8", "text": "Completed Projects" },
+            { "count": "+6", "text": "Happy Customers" },
+            { "count": "+10", "text": "Years of experience" },
+            { "count": "+4", "text": "Certifications" }
+        ],
+        "title": "About Us",
+        "subtitle": "Main Information About Us And What We Love To Do."
+    },
+    "contact": {
+        "info": {
+            "description": "Have questions or ready to start your project? Get in touch with us today!",
+            "items": [
+                {
+                    "value": "+32 485 92 51 30",
+                    "icon": "phone"
+                },
+                {
+                    "value": "info@lunity.be",
+                    "icon": "envelope"
+                },
+                {
+                    "value": "Emile Verhaerenstraat 42, 2890 Sint-Amands",
+                    "icon": "geo"
+                }
+            ],
+            "title": "Let's talk about everything!"
+        },
+        "title": "Contact Us",
+        "submitButton": "Send Message",
+        "subtitle": "Feel Free To Contact Us Any Time"
+    },
+    "footer": "© 2024 Lunity. All rights reserved.",
+    "hero": {
+        "button": {
+            "href": "#about",
+            "text": "More About Us"
+        },
+        "description": "<strong>Illuminating the Future of Web Development</strong> - At Lunity, we pride ourselves on delivering cutting-edge web solutions that transform your digital presence.",
+        "infoData": [
+            {
+                "label": "Email:",
+                "value": "info@lunity.be"
+            },
+            {
+                "label": "Phone:",
+                "value": "+32 485 92 51 30"
+            },
+            {
+                "label": "Location:",
+                "value": "Belgium"
+            }
+        ],
+        "title": "We Are ",
+        "words": ["Lunity","Innovative","Reliable"]
+    },
+    "services": {
+        "items": [
+            {
+                "img":"/assets/images/services/1.webp",
+                "title":"Web Development",
+                "desc":"Transform your ideas into reality with our expert web development services. We specialize in crafting responsive, user-friendly websites that align with your business goals and captivate your audience."
+            },
+            {
+                "img":"/assets/images/services/2.webp",
+                "title":"SEO Marketing",
+                "desc":"Enhance your online visibility and attract more organic traffic with our SEO optimization services. We employ proven strategies to boost your search engine rankings, increase website traffic, and drive conversions."
+            },
+            {
+                "img":"/assets/images/services/3.webp",
+                "title":"Branding",
+                "desc":"Build a distinctive brand identity that resonates with your target audience. From logo design to brand strategy, we help businesses establish a strong and memorable presence across digital platforms, fostering trust and loyalty."
+            }
+        ],
+        "title": "Our Services",
+        "subtitle": "We Have Worked With A Number Of Clients..."
+    }
+}
