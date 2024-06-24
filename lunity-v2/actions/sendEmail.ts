@@ -1,10 +1,8 @@
-"use server";
 import React from "react";
-import { Resend } from "resend";
-import ContactFormEmail from '@/email/contact-form-email'
-import {validateString,getErrorMessage} from '@/components/lib/utils'
+import ReactDOMServer from "react-dom/server";
+import ContactFormEmail from '@/email/contact-form-email';
+import {validateString,getErrorMessage} from '@/components/lib/utils';
 
-const resend=new Resend("re_TfUHSRpE_8JNHEFQZMrcaE9cGcSnV65fQ")
 export const senderEmail=async(formaData:FormData)=>{
   const senderName=formaData.get("senderName")
   const senderEmail=formaData.get("senderEmail")
@@ -35,20 +33,28 @@ export const senderEmail=async(formaData:FormData)=>{
     }
   }
 
+  const requestData = {
+    subject,
+    html: ReactDOMServer.renderToString(React.createElement(ContactFormEmail, {
+      message: message as string,
+      senderEmail: senderEmail as string,
+      senderName: senderName as string,
+      subject:subject as string
+    })),
+  }
+
   let data;
   try {
-    data = await resend.emails.send({
-      from: "Lunity Contact <info@lunity.be>",
-      to: "info@lunity.be" as string,
-      subject: subject as string,
-      reply_to:senderEmail as string,
-      react: React.createElement(ContactFormEmail, {
-        message: message as string,
-        senderEmail: senderEmail as string,
-        senderName: senderName as string,
-        subject:subject as string
-      }),
-    });
+    data = await fetch('https://rprbjxsbitsfsvkyawve.supabase.co/functions/v1/resend', {
+      method: 'POST',
+      body: JSON.stringify(requestData) // Converts the JavaScript object into a JSON string
+    })
+    .then(response => response.json()) // Parses the JSON response into a JavaScript object
+    .then(data => {
+      return {
+        data,
+      }
+    })
   } catch (error: unknown) {
     return {
       error: getErrorMessage(error),
@@ -58,7 +64,4 @@ export const senderEmail=async(formaData:FormData)=>{
   return {
     data,
   };
-
-
-
 }
