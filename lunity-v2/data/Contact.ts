@@ -12,7 +12,7 @@ export const contactInfo={
   desc:"Have questions or ready to start your project? Get in touch with us today!",
   list:[
     {
-      value:"+32 472 18 06 80",
+      value:"+32 485 92 51 30",
       icon:React.createElement(BsPhoneFill)
     },
     {
