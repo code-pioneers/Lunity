@@ -21,7 +21,7 @@ export const InfoData=[
     },
     {
       label:"Phone:",
-      value:"+32 485 92 51 30"
+      value:"+32 472 18 06 80"
     },
     {
       label:"Location:",
