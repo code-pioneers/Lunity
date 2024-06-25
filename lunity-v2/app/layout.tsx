@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
+import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google'
+
 //styles
 import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -14,6 +16,7 @@ import { Toaster } from "react-hot-toast";
 import Loading from "./loading";
 import { themeDefault } from "@/data/Header";
 import { Analytics } from "@/components/elements/Analytics";
+
 const poppins = Poppins({
   subsets: ["latin"],
   weight: '400',
@@ -21,7 +24,10 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Lunity",
-  description: "Illuminating the Future of Web Development",
+  description: "Ontdek de kracht van maatwerk webdesign met Lunity. Wij bieden innovatieve websites, webshops en digitale strategieën die jouw bedrijf naar een hoger niveau tillen. Neem contact op voor een gratis consult!",
+  other: {
+    title: 'Lunity | Innovatieve Weboplossingen voor Jouw Bedrijf'
+  }
 };
 
 export default function RootLayout({children,}: { children: React.ReactNode;}) {
@@ -29,6 +35,7 @@ export default function RootLayout({children,}: { children: React.ReactNode;}) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <GoogleTagManager gtmId="G-GYZZL6BN3R" />
         <Analytics />
       </head>
       <body className={poppins.className}  >
