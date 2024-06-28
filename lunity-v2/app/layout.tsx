@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   title: "Lunity",
   description: "Bij Lunity bieden we professionele webontwikkeling en responsive webdesign. Wij creëren op maat gemaakte websites die visueel aantrekkelijk, functioneel en gebruiksvriendelijk zijn op alle apparaten. Kies voor ons voor uw digitale succes!",
   other: {
-    title: 'Lunity | Innovatieve Weboplossingen voor Jouw Bedrijf'
+    title: 'Lunity | Professionele Website Ontwikkeling & Responsive Webdesign'
   }
 };
 
