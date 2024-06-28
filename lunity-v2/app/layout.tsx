@@ -24,7 +24,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Lunity",
-  description: "Ontdek de kracht van maatwerk webdesign met Lunity. Wij bieden innovatieve websites, webshops en digitale strategieën die jouw bedrijf naar een hoger niveau tillen. Neem contact op voor een gratis consult!",
+  description: "Bij Lunity bieden we professionele webontwikkeling en responsive webdesign. Wij creëren op maat gemaakte websites die visueel aantrekkelijk, functioneel en gebruiksvriendelijk zijn op alle apparaten. Kies voor ons voor uw digitale succes!",
   other: {
     title: 'Lunity | Innovatieve Weboplossingen voor Jouw Bedrijf'
   }
